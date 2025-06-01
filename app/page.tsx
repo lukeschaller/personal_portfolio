@@ -111,6 +111,7 @@ export default function Portfolio() {
                     variant="outline"
                     size="lg"
                     className="border-primary-500 text-primary-600 hover:bg-primary-50 px-6 py-3"
+                    onClick={() => window.open('https://github.com/lukeschaller', '_blank')}
                   >
                     <Github className="w-5 h-5 mr-2" />
                     GitHub
@@ -119,6 +120,7 @@ export default function Portfolio() {
                     variant="outline"
                     size="lg"
                     className="border-primary-500 text-primary-600 hover:bg-primary-50 px-6 py-3"
+                    onClick={() => window.open('https://www.linkedin.com/in/lukeschaller/', '_blank')}
                   >
                     <Linkedin className="w-5 h-5 mr-2" />
                     LinkedIn
@@ -131,7 +133,7 @@ export default function Portfolio() {
                 <div className="relative">
                   <div className="w-80 h-80 lg:w-96 lg:h-96 bg-gray-200 rounded-3xl shadow-2xl overflow-hidden">
                     <img
-                      src="/placeholder.svg?height=400&width=400"
+                      src="/main_pic.jpg"
                       alt="Luke Schaller"
                       className="w-full h-full object-cover"
                     />
@@ -159,9 +161,9 @@ export default function Portfolio() {
             <div className="space-y-8">
               {[
                 {
-                  company: "Tech Startup Inc.",
-                  role: "Software Engineering Intern",
-                  date: "Summer 2024",
+                  company: "Landing",
+                  role: "Technology Intern",
+                  date: "Current",
                   description: [
                     "Developed full-stack web applications using React and Node.js",
                     "Collaborated with cross-functional teams to deliver features on time",
@@ -169,9 +171,9 @@ export default function Portfolio() {
                   ],
                 },
                 {
-                  company: "Innovation Labs",
-                  role: "Frontend Developer Intern",
-                  date: "Summer 2023",
+                  company: "ReliaQuest",
+                  role: "Security Operations Intern",
+                  date: "Summer 2024",
                   description: [
                     "Built responsive user interfaces with modern JavaScript frameworks",
                     "Implemented design systems and component libraries",
@@ -179,8 +181,8 @@ export default function Portfolio() {
                   ],
                 },
                 {
-                  company: "Local Business Solutions",
-                  role: "Web Development Intern",
+                  company: "Lift Foils",
+                  role: "Intern",
                   date: "Summer 2022",
                   description: [
                     "Created custom websites for small businesses using WordPress and PHP",
@@ -202,7 +204,15 @@ export default function Portfolio() {
                         <div className="flex items-center">
                           <div className="w-12 h-12 bg-gray-100 rounded-full mr-4 flex items-center justify-center overflow-hidden">
                             <img
-                              src="/placeholder.svg?height=48&width=48"
+                              src={
+                                exp.company === "Landing" 
+                                  ? "/hellolanding_logo.jpg" 
+                                  : exp.company === "ReliaQuest"
+                                  ? "/reliaquest_logo.jpg"
+                                  : exp.company === "Lift Foils"
+                                  ? "/lift_foils_logo.jpg"
+                                  : "/placeholder.svg"
+                              }
                               alt={`${exp.company} logo`}
                               className="w-8 h-8 object-contain"
                             />
@@ -409,7 +419,7 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="py-8 px-4 bg-gray-900 text-white">
         <div className="container mx-auto text-center">
-          <p className="text-gray-400">© 2024 Luke Schaller. All rights reserved.</p>
+          <p className="text-gray-400">© 2025 Luke Schaller. All rights reserved.</p>
         </div>
       </footer>
     </div>
