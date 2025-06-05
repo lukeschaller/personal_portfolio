@@ -95,14 +95,14 @@ export default function Portfolio() {
 
                 <div className="space-y-6">
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    I'm a rising senior at Texas A&M University studying Computer Science with a Business minor.
-                    Currently working as a Technology Intern at Landing. My passion lies in creating technology that
-                    makes a meaningful impact on people's lives.
+                  I'm a rising senior at Texas A&M University studying Computer Science with a Business minor,
+                  currently working as a Technology Intern at Landing. I'm passionate about building innovative
+                  solutions that solve real-world problems and enhance user experiences.
                   </p>
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    When I'm not coding, you'll find me staying active through fitness and running, always pushing
-                    myself to grow both personally and professionally. I believe in the power of combining technical
-                    expertise with business acumen to build solutions that truly matter.
+                  When I'm not coding, you'll find me pushing my limits through fitness and running, always seeking
+                  new challenges both in and out of the tech world. I believe in the power of combining technical
+                  expertise with business acumen to create impactful solutions that drive meaningful change.
                   </p>
                 </div>
 
@@ -165,9 +165,6 @@ export default function Portfolio() {
                   role: "Technology Intern",
                   date: "Current",
                   description: [
-                    "Developed full-stack web applications using React and Node.js",
-                    "Collaborated with cross-functional teams to deliver features on time",
-                    "Improved application performance by 30% through code optimization",
                   ],
                 },
                 {
@@ -175,9 +172,9 @@ export default function Portfolio() {
                   role: "Security Operations Intern",
                   date: "Summer 2024",
                   description: [
-                    "Built responsive user interfaces with modern JavaScript frameworks",
-                    "Implemented design systems and component libraries",
-                    "Worked closely with UX designers to create intuitive user experiences",
+                    "Safeguarded 1,000s of critical assets across dozens of Fortune 500 clients by identifying and mitigating over 30 types of security risks and processing over 100,000 alerts, leading to a more effective security posture for clients",
+                    "Engineered and programmed automation workflows that filtered out 100s of false positive incidents, dramatically accelerating response time to true positive alerts",
+                    "Leveraged cross-department mentorship insights to refine my technical communication skills, effectively translating complex security issues into clear, actionable information",
                   ],
                 },
                 {
@@ -185,9 +182,8 @@ export default function Portfolio() {
                   role: "Intern",
                   date: "Summer 2022",
                   description: [
-                    "Created custom websites for small businesses using WordPress and PHP",
-                    "Managed client relationships and gathered project requirements",
-                    "Delivered projects 20% faster than estimated timelines",
+                    "Developed and implemented an innovative labeling system for warehouse hard goods and shelves, streamlining inventory management and boosting overall operational efficiency",
+                    "Established a real-time tracking system to monitor production progress through assembly stages by managing barcode printing and application on 100s of hydrofoils, boosting workflow visibility and quality control",
                   ],
                 },
               ].map((exp, index) => (
@@ -271,18 +267,18 @@ export default function Portfolio() {
               <Card className="shadow-xl hover:shadow-2xl transition-shadow overflow-hidden">
                 <div className="p-8">
                   <CardHeader className="p-0 mb-4">
-                    <CardTitle className="text-2xl text-gray-900">E-Commerce Platform</CardTitle>
+                    <CardTitle className="text-2xl text-gray-900">Panda Express POS System</CardTitle>
                     <CardDescription className="text-lg">
-                      A full-stack e-commerce solution with modern features
+                      A full-stack web application with modern features
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="p-0">
                     <p className="text-gray-700 mb-6">
-                      Built a comprehensive e-commerce platform with user authentication, payment processing, inventory
-                      management, and admin dashboard. Features real-time updates and responsive design.
+                    Led a cross-functional team as Scrum Master, applying Agile methodologies and facilitating sprint planning, daily
+                    stand-ups, and retrospectives to consistently hit project milestones.
                     </p>
                     <div className="flex flex-wrap gap-2 mb-6">
-                      {["React", "Node.js", "MongoDB", "Stripe API", "Tailwind CSS"].map((tech) => (
+                      {["Agile (Scrum)", "Vue.js", "Django", "PostgreSQL", "AWS"].map((tech) => (
                         <Badge key={tech} variant="secondary" className="bg-primary-100 text-primary-700">
                           {tech}
                         </Badge>
@@ -294,25 +290,19 @@ export default function Portfolio() {
             </motion.div>
 
             {/* Other Projects Grid */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-8">
               {[
                 {
-                  title: "Task Management App",
-                  description: "A collaborative task management tool with real-time updates and team features.",
-                  tech: ["React", "Firebase", "Material-UI"],
+                  title: "Personal Portfolio",
+                  description: "Crafted a sleek, fully responsive portfolio website that showcases diverse projects and skills.",
+                  tech: ["HTML", "CSS", "JavaScript"],
                   icon: <Smartphone className="w-8 h-8 text-primary-500" />,
                 },
                 {
-                  title: "Weather Dashboard",
-                  description: "Interactive weather dashboard with data visualization and location-based forecasts.",
-                  tech: ["JavaScript", "Chart.js", "Weather API"],
+                  title: "Wordle Game",
+                  description: "Engineered a robust clone of the popular Wordle game, developing intricate game logic and an intuitive interface.",
+                  tech: ["Java", "JavaFX", "SceneBuilder"],
                   icon: <Globe className="w-8 h-8 text-primary-500" />,
-                },
-                {
-                  title: "Database Optimizer",
-                  description: "Tool for analyzing and optimizing database queries with performance metrics.",
-                  tech: ["Python", "SQL", "Flask"],
-                  icon: <Database className="w-8 h-8 text-primary-500" />,
                 },
               ].map((project, index) => (
                 <motion.div
@@ -363,22 +353,22 @@ export default function Portfolio() {
                 {
                   category: "Frontend",
                   icon: <Code className="w-8 h-8 text-primary-500" />,
-                  skills: ["JavaScript", "React", "TypeScript", "Tailwind CSS", "HTML/CSS"],
+                  skills: ["React", "Vue.js", "JavaScript", "HTML/CSS"],
                 },
                 {
                   category: "Backend",
                   icon: <Database className="w-8 h-8 text-primary-500" />,
-                  skills: ["Node.js", "Python", "Express.js", "REST APIs", "GraphQL"],
+                  skills: ["Python", "Java", "C/C++", "Ruby"],
                 },
                 {
                   category: "Database",
                   icon: <Database className="w-8 h-8 text-primary-500" />,
-                  skills: ["SQL", "MongoDB", "PostgreSQL", "Firebase", "Redis"],
+                  skills: ["SQL", "PostgreSQL", "AWS", "Database Design"],
                 },
                 {
                   category: "Tools & Others",
                   icon: <Globe className="w-8 h-8 text-primary-500" />,
-                  skills: ["Git", "Docker", "AWS", "Linux", "Agile"],
+                  skills: ["AI/ML", "Git/GitHub", "Agile (Scrum)", "Microsoft Office"],
                 },
               ].map((skillGroup, index) => (
                 <motion.div
