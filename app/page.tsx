@@ -225,13 +225,13 @@ const AboutSection = () => (
 
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 bg-gray-200 rounded-3xl shadow-2xl overflow-hidden">
+              <div className="w-80 h-[28rem] lg:w-96 lg:h-[36rem] bg-gray-200 rounded-3xl shadow-2xl overflow-hidden">
                 <img
-                  src="/main_pic.jpg"
+                  src="/ring.jpg"
                   alt="Luke Schaller - Software Engineer and Technology Intern"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center scale-125"
                   width={384}
-                  height={384}
+                  height={576}
                 />
               </div>
               <div className="absolute -z-10 top-4 left-4 w-full h-full bg-primary-100 rounded-3xl"></div>
