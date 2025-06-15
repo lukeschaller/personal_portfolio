@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Github, Linkedin, MapPin, Calendar, Code, Database, Globe, Smartphone, GraduationCap } from "lucide-react"
+import { Github, Linkedin, MapPin, Calendar, Code, Database, Globe, Smartphone, GraduationCap, Briefcase, Gamepad2, Wallet } from "lucide-react"
 import Head from 'next/head'
 
 // Animation variants
@@ -31,7 +31,10 @@ const EXPERIENCE_DATA = [
     company: "Landing",
     role: "Technology Intern",
     date: "Current",
-    description: [],
+    description: [
+      "Delivered full-stack enhancements across React frontend and Ruby on Rails admin tools, submitting 10s of pull requests improving internal workflows, dashboard UX, and data transparency for product leadership",
+      "Initiated development of a machine learning prototype to drive business insights, applying data wrangling, preprocessing, and model experimentation to explore internal decision support use cases",
+    ],
     logo: "/hellolanding_logo.jpg"
   },
   {
@@ -40,8 +43,8 @@ const EXPERIENCE_DATA = [
     date: "Summer 2024",
     description: [
       "Safeguarded 1,000s of critical assets across dozens of Fortune 500 clients by identifying and mitigating over 30 types of security risks and processing over 100,000 alerts, leading to a more effective security posture for clients",
-      "Engineered and programmed automation workflows that filtered out 100s of false positive incidents, dramatically accelerating response time to true positive alerts",
-      "Leveraged cross-department mentorship insights to refine my technical communication skills, effectively translating complex security issues into clear, actionable information",
+      "Engineered and programmed automation workflows filtering out 100s of false positive incidents, dramatically accelerating response time to true positive alerts",
+      "Leveraged cross-department mentorship insights to sharpen technical communication skills, translating complex security issues into clear, actionable information",
     ],
     logo: "/reliaquest_logo.jpg"
   },
@@ -50,8 +53,7 @@ const EXPERIENCE_DATA = [
     role: "Intern",
     date: "Summer 2022",
     description: [
-      "Developed and implemented an innovative labeling system for warehouse hard goods and shelves, streamlining inventory management and boosting overall operational efficiency",
-      "Established a real-time tracking system to monitor production progress through assembly stages by managing barcode printing and application on 100s of hydrofoils, boosting workflow visibility and quality control",
+      "Built and deployed warehouse labeling and barcode systems tracking 100+ hydrofoils, streamlining inventory, improving part traceability, and enhancing production visibility",
     ],
     logo: "/lift_foils_logo.jpg"
   },
@@ -67,16 +69,16 @@ const PROJECTS_DATA = {
   },
   other: [
     {
-      title: "Personal Portfolio",
-      description: "Crafted a sleek, fully responsive portfolio website that showcases diverse projects and skills.",
-      tech: ["HTML", "CSS", "JavaScript"],
-      icon: <Smartphone className="w-8 h-8 text-primary-500" />
+      title: "PennyPilot (in development)",
+      description: "Building an AI-powered budgeting assistant with personalized financial insights. \"Your co-pilot for smarter spending.\"",
+      tech: ["React", "Supabase", "Plaid", "OpenAI"],
+      icon: <Wallet className="w-8 h-8 text-primary-500" />
     },
     {
       title: "Wordle Game",
       description: "Engineered a robust clone of the popular Wordle game, developing intricate game logic and an intuitive interface.",
-      tech: ["Java", "JavaFX", "SceneBuilder"],
-      icon: <Globe className="w-8 h-8 text-primary-500" />
+      tech: ["Java FX", "SceneBuilder"],
+      icon: <Gamepad2 className="w-8 h-8 text-primary-500" />
     }
   ]
 }
@@ -86,22 +88,22 @@ const SKILLS_DATA = [
   {
     category: "Frontend",
     icon: <Code className="w-8 h-8 text-primary-500" />,
-    skills: ["React", "Vue.js", "JavaScript", "HTML/CSS"]
+    skills: ["React", "Vue.js", "JavaScript", "HTML / CSS"]
   },
   {
     category: "Backend",
     icon: <Database className="w-8 h-8 text-primary-500" />,
-    skills: ["Python", "Java", "C/C++", "Ruby"]
+    skills: ["Python", "Java", "C / C++", "Ruby"]
   },
   {
     category: "Database",
     icon: <Database className="w-8 h-8 text-primary-500" />,
-    skills: ["SQL", "PostgreSQL", "AWS", "Database Design"]
+    skills: ["SQL", "PostgreSQL", "Supabase", "Database Design"]
   },
   {
     category: "Tools & Others",
     icon: <Globe className="w-8 h-8 text-primary-500" />,
-    skills: ["AI/ML", "Git/GitHub", "Agile (Scrum)", "Microsoft Office"]
+    skills: ["AI / ML", "Git / GitHub", "Agile (Scrum)", "Microsoft Office"]
   }
 ]
 
@@ -165,7 +167,7 @@ const AboutSection = () => (
                 Luke Schaller
               </h1>
               <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
-                Aspiring software engineer passionate about building impactful technology.
+                Aspiring Software Engineer | Passionate about building impactful technology.
               </p>
             </div>
 
@@ -178,18 +180,22 @@ const AboutSection = () => (
                 <GraduationCap className="w-5 h-5 text-primary-500" aria-hidden="true" />
                 <span className="font-medium">Texas A&M University</span>
               </div>
+              <div className="flex items-center space-x-2">
+                <Briefcase className="w-5 h-5 text-primary-500" aria-hidden="true" />
+                <span className="font-medium">Landing</span>
+              </div>
             </div>
 
             <div className="space-y-6">
               <p className="text-lg text-gray-700 leading-relaxed">
-                I'm a rising senior at Texas A&M University studying Computer Science with a Business minor,
-                currently working as a Technology Intern at Landing. I'm passionate about building innovative
-                solutions that solve real-world problems and enhance user experiences.
+              I'm a rising senior at Texas A&M, majoring in Computer Science with a Business minor. Currently, I'm
+              interning at Landing, where I contribute to internal platforms using React and Ruby on Rails, and explore
+              machine learning applications to support product decisions.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                When I'm not coding, you'll find me pushing my limits through fitness and running, always seeking
-                new challenges both in and out of the tech world. I believe in the power of combining technical
-                expertise with business acumen to create impactful solutions that drive meaningful change.
+              I'm passionate about building innovative solutions that solve real-world problems and enhance user
+              experiences. Outside of coding, I enjoy golf and staying active through fitness, currently training
+              for a marathon and Hyrox competition.
               </p>
             </div>
 
